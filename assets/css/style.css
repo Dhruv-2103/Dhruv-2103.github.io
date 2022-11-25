@@ -1,0 +1,112 @@
+:root{
+      --link:#000;
+      --hover:#b00;
+      --main:#000;
+      --bg:#f0f0f0;
+      --size:210vmin;
+      --ratio: 1 / 1.1;
+      font-size: calc(var(--size) / 100);
+}
+
+body{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: var(--bg);
+      font-family: tahoma;
+      color: var(--main);
+      background-image: url(bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+a{
+      text-decoration: none;
+      color: #000;
+}
+
+header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 750;
+      padding: 50px 0;
+}
+
+.container{
+      width: calc(var(--size) * var(--ratio));
+      margin: 0 auto;
+}
+
+.logo{
+      width: 150px;
+      padding: 10px 0;
+      cursor: pointer;
+      position: relative;
+      text-align: center;
+      border: 3px solid var(--main);
+      color: var(--main);
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 3.5px;
+}
+
+.logo:hover{
+    background: var(--main);
+    color: var(--bg);  
+}
+
+nav{
+      display: flex;
+}
+
+nav{
+      display: inline-block;
+      color: #000;
+      font-size: 2.2rem;
+      font-weight: lighter;
+      text-transform: uppercase;
+      margin: 0 0 0 5px;
+      padding: 5px 10px;
+      margin-right: 10px;
+}
+
+nav a:hover{
+      color: var(--hover);
+}
+
+.intro{
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+}
+
+.intro-title{
+      color: var(--main);
+      font-size: 5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 10vmin;
+}
+
+.intro-title p{
+      font-size: 10px;
+}
+
+.btn{
+      display: inline-block;
+      padding: 10px 20px;
+      text-align: center;
+      border: 1.5px solid #000;
+      cursor: pointer;
+      transition: all 300ms ease-in-out;
+}
+
+.btn:hover{
+      background-color: #000;
+      color: var(--bg);
+}
